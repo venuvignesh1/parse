@@ -11,10 +11,10 @@ public class JsonFileReader {
 	
 	static public void main(String... args) throws IOException, ParseException {
 		
-		FileReader FileReader=new FileReader("C:\\Users\\ADMIN\\eclipse-workspace\\JSONFileReader\\src\\test\\resources\\example.json");
+		FileReader fileReader=new FileReader("C:\\Testing\\IPT\\GIT HUB\\parse\\src\\test\\resources\\example.json");
 
 		JSONParser JSONParser=new JSONParser();
-		Object parse = JSONParser.parse(FileReader);
+		Object parse = JSONParser.parse(fileReader);
 		JSONObject js=(JSONObject)parse;
 		System.out.println(js.get("id"));
 		System.out.println(js.get("type"));
@@ -23,5 +23,6 @@ public class JsonFileReader {
 		System.out.println(js.get("batters"));
 		System.out.println(js.get("topping"));
 		System.out.println(js.get("type"));
+		System.out.println("VA");
 	}
 }
